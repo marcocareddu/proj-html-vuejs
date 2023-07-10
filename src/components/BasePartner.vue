@@ -1,6 +1,16 @@
 <script>
 export default {
+    computed: {
 
+        // Generate six image path 
+        getSixImagePath() {
+            const imagesPath = [];
+            for (let i = 0; i < 6; i++) {
+                imagesPath.push(`./src/assets/img/client-logo-0${i + 1}.png`)
+            }
+            return imagesPath;
+        }
+    }
 }
 </script>
 
