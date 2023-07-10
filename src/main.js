@@ -1,5 +1,8 @@
 import { createApp } from 'vue'
 
+// Import FontSource
+import '@fontsource-variable/montserrat';
+
 // Import Bootstrap
 import 'bootstrap/dist/css/bootstrap.min.css';
 
