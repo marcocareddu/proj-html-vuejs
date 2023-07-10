@@ -1,7 +1,19 @@
 <script>
-export default {}
+export default {
+    data() {
+        return {
+            props: {
+                data: Array
+            }
+        }
+    }
+}
 </script>
 
-<template></template>
+<template>
+    <div>
+        <h1>{{ data.title }}</h1>
+    </div>
+</template>
 
 <style></style>
