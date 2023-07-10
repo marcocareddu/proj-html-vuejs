@@ -67,10 +67,10 @@ ul li {
 a {
     text-decoration: none;
     color: black;
+    transition: 0.3s;
 
     &:hover {
         color: $secondaryColor;
-        text-decoration: underline;
     }
 }
 </style>
