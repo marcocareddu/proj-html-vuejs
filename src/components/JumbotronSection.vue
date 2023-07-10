@@ -1,5 +1,11 @@
 <script>
-export default {}
+import BasePartner from './BasePartner.vue';
+
+export default {
+    components: {
+        BasePartner,
+    }
+}
 </script>
 
 <template>
@@ -27,6 +33,9 @@ export default {}
                 <img src="../assets/img/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg" alt="">
             </div>
         </div>
+
+        <!-- Base Partner -->
+        <BasePartner />
     </div>
 </template>
 
