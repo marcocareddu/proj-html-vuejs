@@ -54,7 +54,7 @@ header {
     top: 0;
     right: 0;
     left: 0;
-    box-shadow: 0px 0px 20px 0px #63F2FF;
+    box-shadow: 0px 2px 20px 0px #63f2ff5e;
 }
 
 
