@@ -24,7 +24,7 @@ export default {
                 <!-- Navbar Menu -->
                 <div class="menu">
                     <ul class="d-flex mb-0">
-                        <li v-for="voice in headerMenu" :key="voice.title" class="pe-3">
+                        <li v-for="voice in headerMenu" :key="voice.title" class="px-4">
                             <a :href="voice.title">{{ voice.title }}</a>
                         </li>
                     </ul>
@@ -38,7 +38,6 @@ export default {
                 <!-- SearchBar -->
                 <SearchBar />
             </div>
-
 
         </div>
     </header>
@@ -57,7 +56,6 @@ header {
     box-shadow: 0px 2px 20px 0px #63f2ff5e;
 }
 
-
 img {
     height: 30px;
 }
@@ -69,5 +67,10 @@ ul li {
 a {
     text-decoration: none;
     color: black;
+
+    &:hover {
+        color: $secondaryColor;
+        text-decoration: underline;
+    }
 }
 </style>
