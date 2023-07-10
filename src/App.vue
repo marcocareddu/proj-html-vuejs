@@ -3,8 +3,30 @@ import AppMain from './components/AppMain.vue';
 import AppHeader from './components/AppHeader.vue';
 import AppFooter from './components/AppFooter.vue';
 
+// Import Data
+import {
+    addressData,
+    bestBlogsData,
+    carouselData,
+    footerMenu,
+    headerMenu,
+    courseData,
+    tutoringData
+} from './assets/data/index';
+
 export default {
     name: 'MaxCoach',
+    data() {
+        return {
+            addressData,
+            bestBlogsData,
+            carouselData,
+            footerMenu,
+            headerMenu,
+            courseData,
+            tutoringData,
+        }
+    },
     components: {
         AppMain,
         AppHeader,
@@ -15,7 +37,7 @@ export default {
 
 <template>
     <!-- Header -->
-    <AppHeader />
+    <AppHeader :headerMenu="headerMenu" />
 
     <!-- Main -->
     <AppMain />
