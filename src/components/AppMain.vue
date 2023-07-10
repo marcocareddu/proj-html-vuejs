@@ -1,7 +1,16 @@
 <script>
-export default {}
+import Jumbotron from './JumbotronSection.vue';
+
+export default {
+    components: {
+        Jumbotron,
+    }
+}
 </script>
 
-<template></template>
+<template>
+    <!-- Jumbotron -->
+    <Jumbotron />
+</template>
 
 <style></style>
