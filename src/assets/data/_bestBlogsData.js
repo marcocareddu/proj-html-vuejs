@@ -13,4 +13,4 @@ export default [
         data: 'May 15, 2020',
         views: 603,
     },
-]
+];

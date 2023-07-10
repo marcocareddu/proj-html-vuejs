@@ -19,4 +19,4 @@ export default [
             'Terms of services',
         ]
     },
-]
+];

@@ -20,4 +20,4 @@ export default [
         textLink: 'Start Now',
         link: '#'
     },
-]
+];

@@ -41,4 +41,4 @@ export default [
         lessonsNumber: 14,
         enrolledStudents: 76,
     },
-]
+];

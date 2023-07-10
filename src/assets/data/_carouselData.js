@@ -27,4 +27,4 @@ export default [
         job: 'Multimedia Admin',
         name: 'Florence Themes',
     },
-]
+];
