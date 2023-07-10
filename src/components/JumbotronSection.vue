@@ -1,9 +1,11 @@
 <script>
 import BasePartner from './BasePartner.vue';
+import BaseButton from './BaseButton.vue';
+
 
 export default {
     components: {
-        BasePartner,
+        BasePartner, BaseButton,
     }
 }
 </script>
@@ -19,18 +21,17 @@ export default {
                     searching, enjoy the
                     process.</p>
 
-                <!-- ! INSERT BASE BUTTON COMPONENT-->
-                <baseButton />
-
-                <!-- ! TEMPORARY -->
-                <button class='my-3'>Download free guide</button>
+                <!-- Base Button -->
+                <div>
+                    <BaseButton buttonText="Download Free Guide" />
+                </div>
 
                 <p class="py-2">Have questions? <a href="#" class="fw-bolder">Get Free Samples</a></p>
             </div>
 
             <!-- Picture section -->
             <div class="picture-section d-flex justify-content-center align-items-center">
-                <img src="../assets/img/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg" alt="">
+                <img src="../assets/img/about-me-profile-ohm4dxoearqbxny7q3bq1pzbdgofdx0tobbeqcvzd0.jpg" alt="Girl Photo">
             </div>
         </div>
 
@@ -45,6 +46,10 @@ export default {
 .jumbotron {
     color: $tertiaryColor;
     margin-top: 80px;
+}
+
+.test {
+    width: 60%;
 }
 
 .text-box {
