@@ -1,7 +1,13 @@
 <script>
-export default {}
+import CarouselCard from './CarouselCard.vue';
+
+export default {
+    components: { CarouselCard },
+}
 </script>
 
-<template></template>
+<template>
+    <CarouselCard />
+</template>
 
 <style></style>
