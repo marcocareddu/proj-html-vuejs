@@ -5,7 +5,7 @@ export default {}
 <template>
     <div class="container d-flex py-5 justify-content-evenly">
         <div class="picture px-5">
-            <img src="../../assets/img/home-2-popup-video-poster.jpg" class="rounded-2" alt="">
+            <img src="../../assets/img/home-2-popup-video-poster.jpg" class="main-pic rounded-2" alt="">
             <img src="../../assets/img/icon-youtube-play.png" class="youtube img-fluid" alt="">
         </div>
 
@@ -29,7 +29,7 @@ export default {}
     overflow: hidden;
 }
 
-img {
+.main-pic {
     height: 450px;
     transition: 1s;
 
