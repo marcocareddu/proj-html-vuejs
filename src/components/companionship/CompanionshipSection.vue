@@ -20,4 +20,43 @@ export default {}
     </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use '../../assets/scss/partials/_vars.scss' as *;
+
+.picture {
+    position: relative;
+    cursor: pointer;
+}
+
+img {
+    height: 450px;
+}
+
+.youtube {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.text {
+    flex-basis: 20%;
+}
+
+h1,
+h6 {
+    color: $tertiaryColor;
+
+}
+
+.companionship,
+a {
+    color: $secondaryColor;
+}
+
+a {
+    font-size: 0.8rem;
+}
+</style>
