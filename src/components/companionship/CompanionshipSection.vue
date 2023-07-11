@@ -4,8 +4,8 @@ export default {}
 
 <template>
     <div class="container d-flex py-5 justify-content-evenly">
-        <div class="picture px-5">
-            <img src="../../assets/img/home-2-popup-video-poster.jpg" class="main-pic rounded-2" alt="">
+        <div class="picture px-5 rounded-3">
+            <img src="../../assets/img/home-2-popup-video-poster.jpg" class="main-pic" alt="">
             <img src="../../assets/img/icon-youtube-play.png" class="youtube img-fluid" alt="">
         </div>
 
@@ -31,10 +31,11 @@ export default {}
 
 .main-pic {
     height: 450px;
+    transform: scale(1.2);
     transition: 1s;
 
     &:hover {
-        transform: scale(1.1);
+        transform: scale(1.4);
     }
 }
 
