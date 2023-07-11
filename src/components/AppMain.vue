@@ -1,11 +1,13 @@
 <script>
 import Jumbotron from './JumbotronSection.vue';
 import CoursesSection from './courses/CoursesSection.vue';
+import TutoringSection from './tutoring/TutoringSection.vue';
 
 export default {
     components: {
         Jumbotron,
-        CoursesSection
+        CoursesSection,
+        TutoringSection,
     }
 }
 </script>
@@ -16,6 +18,9 @@ export default {
 
     <!-- Courses Section -->
     <CoursesSection />
+
+    <!-- Tutoring Section -->
+    <TutoringSection />
 </template>
 
 <style></style>
