@@ -17,7 +17,7 @@ export default {
 
 <template>
     <!-- Courses Card -->
-    <CoursesCard v-for="card in courseData" />
+    <CoursesCard v-for="card in courseData" :courseData="card" />
 </template>
 
 <style></style>
