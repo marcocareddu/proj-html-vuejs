@@ -36,7 +36,7 @@ export default {
         </div>
 
         <!-- Base Partner -->
-        <BasePartner />
+        <BasePartner class="py-5" />
     </div>
 </template>
 
