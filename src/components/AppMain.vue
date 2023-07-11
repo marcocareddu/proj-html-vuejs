@@ -6,6 +6,7 @@ import CompanionshipSection from './companionship/CompanionshipSection.vue';
 import CarouselSection from './carousel/CarouselSection.vue';
 import AchievementsSection from './achievements/AchievementsSection.vue';
 import BestBlogsSection from './best_blogs/BestblogsSection.vue';
+import SubscribeSection from './SubscribeSection.vue';
 
 export default {
     components: {
@@ -16,6 +17,7 @@ export default {
         CarouselSection,
         AchievementsSection,
         BestBlogsSection,
+        SubscribeSection,
     }
 }
 </script>
@@ -41,4 +43,7 @@ export default {
 
     <!-- BestBlogs Section -->
     <BestBlogsSection />
+
+    <!-- Subscribe Section -->
+    <SubscribeSection />
 </template>
