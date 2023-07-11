@@ -60,7 +60,6 @@ p {
 }
 
 a {
-    text-decoration: none;
     color: $customLilla;
     font-size: 0.8rem;
     transition: 0.3s;
