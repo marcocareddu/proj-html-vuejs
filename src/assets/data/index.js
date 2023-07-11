@@ -6,6 +6,7 @@ import headerMenu from './_headerMenu';
 import courseData from './_courseData';
 import tutoringData from './_tutoringData';
 import achievementsData from './_achievementsData';
+import bestBlogsList from './_bestBlogsList';
 
 export {
     addressData,
@@ -15,5 +16,6 @@ export {
     headerMenu,
     courseData,
     tutoringData,
-    achievementsData
+    achievementsData,
+    bestBlogsList,
 };
