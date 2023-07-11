@@ -1,19 +1,30 @@
 <script>
+import { courseData } from '../../assets/data';
+
 export default {
-    data() {
-        return {
-            props: {
-                data: Array
-            }
-        }
-    }
+    props: { courseData: Object }
 }
 </script>
 
 <template>
     <div>
-        <h1>{{ data.title }}</h1>
+        <img :src="`./src/assets/img/${courseData.image}`" alt="">
+    </div>
+    <div>
+        <h3>{{ courseData.cost }}</h3>
+        <h1>{{ courseData.title }}</h1>
+        <div class="d-flex">
+            <p>{{ courseData.lessonsNumber }} Lessons</p>
+            <p>{{ courseData.enrolledStudents }} Students</p>
+        </div>
     </div>
 </template>
 
-<style></style>
+<style lang="scss" scoped>
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+</style>
