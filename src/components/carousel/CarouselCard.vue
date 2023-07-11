@@ -22,3 +22,24 @@ export default {
     </div>
 </template>
 
+<style lang="scss" scoped>
+@use '../../assets/scss/partials/_vars.scss' as *;
+
+h4 {
+    font-size: 1rem;
+    color: $tertiaryColor;
+    text-transform: capitalize;
+}
+
+h5 {
+    color: $customLilla;
+    font-size: 0.8rem;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+</style>
