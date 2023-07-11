@@ -1,11 +1,13 @@
 <script>
+import { faFontAwesome } from '@fortawesome/free-solid-svg-icons';
 export default {}
 </script>
 
 <template>
     <form action="">
         <input type="text" class='p-3 rounded-start border-0' placeholder="Search...">
-        <button class="rounded-end my-3 px-3 py-3 border-0">go</button>
+        <button class="rounded-end my-3 px-3 py-3 border-0"><font-awesome-icon
+                :icon="['fas', 'magnifying-glass']" /></button>
     </form>
 </template>
 
