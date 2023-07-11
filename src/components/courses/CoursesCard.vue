@@ -1,13 +1,11 @@
 <script>
-import { courseData } from '../../assets/data';
-
 export default {
     props: { courseData: Object }
 }
 </script>
 
 <template>
-    <div class="custom-card d-flex col-6 px-5 align-items-center py-3">
+    <div class="custom-card d-flex col-6 px-5 py-3 align-items-center">
         <div class="px-3">
             <img :src="`./src/assets/img/${courseData.image}`" alt="">
         </div>
@@ -38,6 +36,7 @@ h5 {
 }
 
 .info-lessons {
+    color: $customLilla;
     font-size: 0.8rem;
 }
 
