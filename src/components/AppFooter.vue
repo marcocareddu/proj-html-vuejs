@@ -1,13 +1,11 @@
 <script>
 
 // Import data
-import addressData from '../assets/data/_addressData';
 import footerMenu from '../assets/data/_footerMenu';
 
 export default {
     data() {
         return {
-            addressData,
             footerMenu,
         }
     }
@@ -17,15 +15,36 @@ export default {
 <template>
     <footer>
         <div class="container">
-            <div>
+            <div class="d-flex justify-content-between py-5">
+                <!-- Address Section -->
                 <div class="address">
-                    <h2>Address</h2>
+                    <h5 class="fw-bolder">Address</h5>
                     <ul>
-                        <li v-for="text in addressData">{{ text }}</li>
+                        <li class="py-2">382 NE 191st St # 87394 Miami, FL 33179-3899</li>
+                        <li class="py-2">+1 (305) 547-9909 (9am - 5pm EST, Monday - Friday)</li>
+                        <li class="py-2"><a href="#">support@maxcoach.com</a></li>
                     </ul>
+
+                    <!-- Social Icons -->
+                    <div class="social">
+                        <span>ico</span>
+                        <span>ico</span>
+                        <span>ico</span>
+                        <span>ico</span>
+                    </div>
+                </div>
+
+                <!-- Footer Menu -->
+                <div v-for="voice in footerMenu" class="">
+                    <h5 class="fw-bolder">{{ voice.title }}</h5>
+                    <div class="row">
+                        <ul>
+                            <li v-for="link in voice.link" class="py-2"><a href="#">{{ link }}</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
+            <p class="text-center">© 2020 Maxcoach. All Rights Reserved</p>
         </div>
     </footer>
 </template>
@@ -35,6 +54,13 @@ export default {
 
 footer {
     background-color: $topsBgColor;
-    height: 500px;
+}
+
+a {
+    color: black;
+
+    &:hover {
+        color: $secondaryColor;
+    }
 }
 </style>
