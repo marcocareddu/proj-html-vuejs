@@ -17,7 +17,11 @@ export default {
 </script>
 
 <template>
-    <CarouselCard v-for="card in carouselData" :key="card.name" :carouselData="card" />
+    <div class="container">
+        <div class="row">
+            <CarouselCard v-for="card in carouselData" :key="card.name" :carouselData="card" />
+        </div>
+    </div>
 </template>
 
 <style></style>
