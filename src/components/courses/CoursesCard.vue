@@ -55,8 +55,8 @@ h4 {
 }
 
 img {
-    height: 150px;
-    width: 150px;
+    height: 180px;
+    width: 180px;
     object-fit: cover;
     border-radius: 100%;
 }
