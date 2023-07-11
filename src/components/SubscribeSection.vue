@@ -23,4 +23,33 @@ export default {
     </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+@use '../assets/scss/partials/vars' as *;
+
+h2 {
+    color: $tertiaryColor;
+}
+
+h5 {
+    font-size: 1.1rem;
+    color: $customDarkGrey;
+}
+
+span {
+    color: $secondaryColor;
+}
+
+input {
+    width: 50%;
+    background-color: $customGrey;
+
+    &:focus-visible {
+        outline: none;
+    }
+}
+
+.mini-container {
+    margin: 0 auto;
+    width: 60%;
+}
+</style>
