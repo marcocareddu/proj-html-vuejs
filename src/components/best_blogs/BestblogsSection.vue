@@ -15,10 +15,23 @@ export default {
 </script>
 
 <template>
-    <div class="bestblogs-section">
+    <div class="bestblogs-section py-5">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center">
 
-        <!-- Bestblogs card here -->
-        <BestblogsCard v-for="card in bestBlogsData" :bestblogsData="card" />
+                <!-- Bestblogsist -->
+                <div class="list">
+                    <h6>ENJOYABLE INSIGHTS</h6>
+                    <h3 class="fw-bolder">Most Viewed <span class="fw-normal">Best Blogs</span></h3>
+                    <ul>
+                        <li v-for="link in bestBlogsList" class="py-3"><a href="#" class="fw-bolder">{{ link }}</a></li>
+                    </ul>
+                </div>
+
+                <!-- Bestblogs card here -->
+                <BestblogsCard v-for="card in bestBlogsData" :key="card.name" :bestblogsData="card" class="custom-card" />
+            </div>
+        </div>
     </div>
 </template>
 
@@ -27,5 +40,31 @@ export default {
 
 .bestblogs-section {
     background-color: $bestBlogsBgColor;
+}
+
+h3 {
+    color: $tertiaryColor;
+
+}
+
+h6 {
+    color: $customLilla;
+}
+
+span {
+    color: $secondaryColor;
+}
+
+a {
+    color: $tertiaryColor;
+    transition: 0.3s;
+
+    &:hover {
+        color: $secondaryColor;
+    }
+}
+
+.custom-card {
+    flex-basis: 28%;
 }
 </style>
