@@ -16,9 +16,7 @@ export default {
 </script>
 
 <template>
-    <!-- Courses Section -->
     <div class="tutoring-section">
-
         <div class="container p-4">
 
             <div class="title text-center py-5">

@@ -18,7 +18,6 @@ export default {
 </script>
 
 <template>
-    <!-- Courses Section -->
     <div class="courses-section">
 
         <div class="container p-4">
