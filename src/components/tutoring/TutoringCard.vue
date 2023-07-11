@@ -6,13 +6,13 @@ export default {
 
 <template>
     <div class="custom-card col-4 px-5 py-3">
-        <div class="px-3">
+        <div class="py-4 px-2">
             <img :src="`./src/assets/img/${tutoringData.image}`" alt="">
         </div>
         <div class="px-2 info-box">
             <h4 class="fw-bolder">{{ tutoringData.title }}</h4>
-            <h5 class="fw-bolder">{{ tutoringData.text }}</h5>
-            <a :href="tutoringData.text">{{ tutoringData.textLink }}</a>
+            <p class="pt-2">{{ tutoringData.text }}</p>
+            <a :href="tutoringData.text" class="fw-bolder pt-2">{{ tutoringData.textLink }}</a>
         </div>
     </div>
 </template>
@@ -20,18 +20,24 @@ export default {
 <style lang="scss" scoped>
 @use '../../assets/scss/partials/_vars.scss' as *;
 
+.custom-card {
+    &:hover a {
+        color: $secondaryColor;
+    }
+}
+
 h4 {
-    color: $secondaryColor;
+    color: $tertiaryColor;
 }
 
-h5 {
-    font-size: 1.2rem;
+p {
+    font-size: 0.9rem;
 }
 
-img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 100%;
+a {
+    text-decoration: none;
+    color: $customLilla;
+    font-size: 0.8rem;
+    transition: 0.3s;
 }
 </style>
