@@ -1,4 +1,6 @@
 <script>
+import { faFontAwesome } from '@fortawesome/free-solid-svg-icons';
+
 export default {
     props: { bestblogsData: Object }
 }
@@ -13,8 +15,8 @@ export default {
             <h6>{{ bestblogsData.type.toUpperCase() }}</h6>
             <h4 class="fw-bolder">{{ bestblogsData.title }}</h4>
             <div class="d-flex py-3">
-                <p class="pe-3">{{ bestblogsData.data }}</p>
-                <p>{{ bestblogsData.views }} views</p>
+                <p class="pe-3"><font-awesome-icon :icon="['far', 'calendar']" /> {{ bestblogsData.data }}</p>
+                <p><font-awesome-icon :icon="['fas', 'eye']" /> {{ bestblogsData.views }} views</p>
             </div>
         </div>
     </div>

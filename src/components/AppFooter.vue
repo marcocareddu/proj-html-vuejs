@@ -1,4 +1,5 @@
 <script>
+import { faFontAwesome } from '@fortawesome/free-solid-svg-icons';
 
 // Import data
 import footerMenu from '../assets/data/_footerMenu';
@@ -27,10 +28,10 @@ export default {
 
                     <!-- Social Icons -->
                     <div class="social">
-                        <span>ico</span>
-                        <span>ico</span>
-                        <span>ico</span>
-                        <span>ico</span>
+                        <a href="#" class="pe-5"><font-awesome-icon :icon="['fab', 'square-facebook']" /></a>
+                        <a href="#" class="pe-5"><font-awesome-icon :icon="['fab', 'twitter']" /></a>
+                        <a href="#" class="pe-5"><font-awesome-icon :icon="['fab', 'instagram']" /></a>
+                        <a href="#"><font-awesome-icon :icon="['fab', 'linkedin']" /></a>
                     </div>
                 </div>
 
@@ -61,6 +62,18 @@ a {
 
     &:hover {
         color: $secondaryColor;
+    }
+}
+
+.social {
+    font-size: 1.8rem;
+
+    a {
+        color: $customLilla;
+
+        &:hover {
+            color: $secondaryColor;
+        }
     }
 }
 

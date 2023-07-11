@@ -1,4 +1,5 @@
 <script>
+import { faFontAwesome } from '@fortawesome/free-solid-svg-icons';
 export default {}
 </script>
 
@@ -15,7 +16,7 @@ export default {}
             <h1 class="companionship">Companionship</h1>
             <p>Sneek peek into what has in store for you on our online teaching and mentoring portal. Seek for some hidden
                 hints of early-bird rewards as well.</p>
-            <a href="#" class="fw-bolder">Download free guidebook</a>
+            <a href="#" class="fw-bolder">Download free guidebook <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
         </div>
     </div>
 </template>

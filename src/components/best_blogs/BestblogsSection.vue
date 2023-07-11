@@ -1,4 +1,6 @@
 <script>
+import { faFontAwesome } from '@fortawesome/free-solid-svg-icons';
+
 import BestblogsCard from '../best_blogs/BestblogsCard.vue';
 
 // Import Data
@@ -24,7 +26,8 @@ export default {
                     <h6>ENJOYABLE INSIGHTS</h6>
                     <h3 class="fw-bolder">Most Viewed <span class="fw-normal">Best Blogs</span></h3>
                     <ul>
-                        <li v-for="link in bestBlogsList" class="py-3"><a href="#" class="fw-bolder">{{ link }}</a></li>
+                        <li v-for="link in bestBlogsList" class="py-3"><a href="#" class="fw-bolder"><font-awesome-icon
+                                    :icon="['fas', 'arrow-right']" /> {{ link }}</a></li>
                     </ul>
                 </div>
 

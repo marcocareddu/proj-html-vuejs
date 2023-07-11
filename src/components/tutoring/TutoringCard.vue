@@ -1,4 +1,6 @@
 <script>
+import { faFontAwesome } from '@fortawesome/free-solid-svg-icons';
+
 export default {
     props: { tutoringData: Object }
 }
@@ -12,7 +14,8 @@ export default {
         <div class="px-2 info-box">
             <h4 class="fw-bolder">{{ tutoringData.title }}</h4>
             <p class="pt-2">{{ tutoringData.text }}</p>
-            <a :href="tutoringData.text" class="fw-bolder pt-2">{{ tutoringData.textLink }}</a>
+            <a :href="tutoringData.text" class="fw-bolder pt-2">{{ tutoringData.textLink }} <font-awesome-icon
+                    :icon="['fas', 'arrow-right']" /></a>
         </div>
     </div>
 </template>

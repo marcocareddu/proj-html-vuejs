@@ -1,4 +1,6 @@
 <script>
+import { faFontAwesome } from '@fortawesome/free-solid-svg-icons';
+
 export default {
     props: { courseData: Object }
 }
@@ -13,8 +15,9 @@ export default {
             <h4 class="fw-bolder">{{ courseData.cost }}</h4>
             <h5 class="fw-bolder">{{ courseData.title }}</h5>
             <div class="d-flex info-lessons">
-                <p class="pe-3">{{ courseData.lessonsNumber }} Lessons</p>
-                <p>{{ courseData.enrolledStudents }} Students</p>
+                <p class="pe-3"><font-awesome-icon :icon="['far', 'file-lines']" /> {{ courseData.lessonsNumber }} Lessons
+                </p>
+                <p><font-awesome-icon :icon="['far', 'user']" /> {{ courseData.enrolledStudents }} Students</p>
             </div>
         </div>
     </div>
