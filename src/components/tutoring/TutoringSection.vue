@@ -36,4 +36,19 @@ export default {
     </div>
 </template>
 
-<style></style>
+<style lang="scss" scoped>
+@use '../../assets/scss/partials/_vars.scss' as *;
+
+h6 {
+    color: $customLilla;
+}
+
+span {
+    color: $secondaryColor;
+    font-weight: 500;
+}
+
+.title {
+    color: $tertiaryColor;
+}
+</style>
