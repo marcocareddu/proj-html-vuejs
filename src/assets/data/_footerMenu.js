@@ -15,7 +15,7 @@ export default [
         link: [
             'Membership',
             'Purchase guide',
-            'Rpivacy policy',
+            'Privacy policy',
             'Terms of services',
         ]
     },
