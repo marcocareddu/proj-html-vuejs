@@ -1,4 +1,5 @@
 <script>
+import { faFontAwesome } from '@fortawesome/free-solid-svg-icons';
 import SearchBar from './BaseSearchBar.vue';
 
 export default {
@@ -25,14 +26,16 @@ export default {
                 <div class="menu">
                     <ul class="d-flex mb-0">
                         <li v-for="voice in headerMenu" :key="voice.title" class="px-4">
-                            <a :href="voice.title">{{ voice.title }}</a>
+                            <a :href="voice.title" class="d-flex align-items-center">{{ voice.title }}
+                                <FontAwesomeIcon icon="fa-solid fa-chevron-down" />
+                            </a>
                         </li>
                     </ul>
                 </div>
 
                 <!-- User section -->
-                <div class="user">
-                    <!-- !TODO Insert icon -->
+                <div class="user mx-3">
+                    <a href="#"><font-awesome-icon :icon="['far', 'circle-user']" /></a>
                 </div>
 
                 <!-- SearchBar -->
@@ -55,6 +58,15 @@ header {
     right: 0;
     left: 0;
     box-shadow: 0px 2px 20px 0px $customLilla;
+}
+
+.user {
+    font-size: 1.3rem;
+}
+
+.fa-chevron-down {
+    margin-left: 5px;
+    font-size: 0.6rem;
 }
 
 img {
