@@ -5,8 +5,8 @@ export default {
 </script>
 
 <template>
-    <div class="bg-white rounded-bottom">
-        <div class="">
+    <div class="bg-white rounded-bottom big-box">
+        <div class="picture">
             <img :src="`./src/assets/img/${bestblogsData.image}`" class="img-fluid rounded-top" alt="">
         </div>
         <div class="px-3 pt-4 info-box">
@@ -22,6 +22,23 @@ export default {
 
 <style lang="scss" scoped>
 @use '../../assets/scss/partials/_vars.scss' as *;
+
+.big-box {
+
+    &:hover img {
+        transform: scale(1.1);
+    }
+}
+
+.picture {
+    overflow: hidden;
+}
+
+img {
+
+    transition: 1s;
+    cursor: pointer;
+}
 
 h4 {
     color: $tertiaryColor;
