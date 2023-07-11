@@ -5,6 +5,7 @@ import footerMenu from './_footerMenu';
 import headerMenu from './_headerMenu';
 import courseData from './_courseData';
 import tutoringData from './_tutoringData';
+import achievementsData from './_achievementsData';
 
 export {
     addressData,
@@ -13,5 +14,6 @@ export {
     footerMenu,
     headerMenu,
     courseData,
-    tutoringData
+    tutoringData,
+    achievementsData
 };
