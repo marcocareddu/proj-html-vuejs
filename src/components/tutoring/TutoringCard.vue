@@ -21,6 +21,8 @@ export default {
 @use '../../assets/scss/partials/_vars.scss' as *;
 
 .custom-card {
+    cursor: pointer;
+
     &:hover a {
         color: $secondaryColor;
     }

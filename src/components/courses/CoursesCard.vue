@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <div class="custom-card d-flex col-6 px-5 py-3 align-items-center">
+    <div class="custom-card d-flex col-6 px-5 py-3 align-items-center rounded-3">
         <div class="px-3">
             <img :src="`./src/assets/img/${courseData.image}`" alt="">
         </div>
@@ -23,16 +23,30 @@ export default {
 <style lang="scss" scoped>
 @use '../../assets/scss/partials/_vars.scss' as *;
 
+.custom-card {
+    transition: 0.3s;
+
+    &:hover {
+        background-color: white;
+    }
+}
+
+h5 {
+    font-size: 1.2rem;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        color: $secondaryColor;
+    }
+}
+
 .info-box {
     color: $tertiaryColor;
 }
 
 h4 {
     color: $secondaryColor;
-}
-
-h5 {
-    font-size: 1.2rem;
 }
 
 .info-lessons {
