@@ -5,14 +5,14 @@ export default {
 </script>
 
 <template>
-    <div class="custom-card col-4 bg-white">
+    <div class="bg-white rounded-bottom">
         <div class="">
-            <img :src="`./src/assets/img/${bestblogsData.image}`" class="img-fluid" alt="">
+            <img :src="`./src/assets/img/${bestblogsData.image}`" class="img-fluid rounded-top" alt="">
         </div>
-        <div class="px-2 info-box">
+        <div class="px-3 pt-4 info-box">
             <h6>{{ bestblogsData.type.toUpperCase() }}</h6>
             <h4 class="fw-bolder">{{ bestblogsData.title }}</h4>
-            <div class="d-flex info-lessons">
+            <div class="d-flex py-3">
                 <p class="pe-3">{{ bestblogsData.data }}</p>
                 <p>{{ bestblogsData.views }} views</p>
             </div>
@@ -25,6 +25,12 @@ export default {
 
 h4 {
     color: $tertiaryColor;
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        color: $secondaryColor;
+    }
 }
 
 h6 {
