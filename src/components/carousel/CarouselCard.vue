@@ -5,14 +5,14 @@ export default {
 </script>
 
 <template>
-    <div class="col-3">
-        <div class="text">
+    <div class="customCol bg-white mx-3 rounded-3">
+        <div class="text p-4">
             <h4 class="fw-bolder">{{ carouselData.title }}</h4>
             <p> {{ carouselData.text }}</p>
         </div>
         <div class="d-flex py-3 align-items-center justify-content-start">
             <div class="pe-3">
-                <img :src="`./src/assets/img/${carouselData.image}`" alt="">
+                <img :src="`./src/assets/img/${carouselData.image}`" alt="avatar">
             </div>
             <div class="">
                 <h4 class="fw-bolder py-2">{{ carouselData.name.toUpperCase() }}</h4>
@@ -24,6 +24,10 @@ export default {
 
 <style lang="scss" scoped>
 @use '../../assets/scss/partials/_vars.scss' as *;
+
+.customCol {
+    flex-basis: 22%;
+}
 
 h4 {
     font-size: 1rem;
