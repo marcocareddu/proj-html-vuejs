@@ -16,8 +16,12 @@ export default {
 </script>
 
 <template>
-    <!-- Courses Card -->
-    <CoursesCard v-for="card in courseData" :courseData="card" />
+    <div class="container py-4">
+        <div class="row">
+            <!-- Courses Card -->
+            <CoursesCard v-for="card in courseData" :courseData="card" />
+        </div>
+    </div>
 </template>
 
 <style></style>
