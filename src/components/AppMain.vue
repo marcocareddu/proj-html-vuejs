@@ -4,7 +4,7 @@ import CoursesSection from './courses/CoursesSection.vue';
 import TutoringSection from './tutoring/TutoringSection.vue';
 import CompanionshipSection from './companionship/CompanionshipSection.vue';
 import CarouselSection from './carousel/CarouselSection.vue';
-
+import AchievementsSection from './achievements/AchievementsSection.vue';
 
 export default {
     components: {
@@ -13,6 +13,7 @@ export default {
         TutoringSection,
         CompanionshipSection,
         CarouselSection,
+        AchievementsSection,
     }
 }
 </script>
@@ -32,6 +33,7 @@ export default {
 
     <!-- Carousel Section -->
     <CarouselSection />
-</template>
 
-<style></style>
+    <!-- Achievements Section -->
+    <AchievementsSection />
+</template>
