@@ -8,9 +8,9 @@ export default {
 
 <template>
     <div class="subscribe-section">
-        <div class="container text-center">
+        <div class="container text-center py-5">
 
-            <div class="mini-container">
+            <div class="mini-container py-5">
                 <h2 class="fw-bolder">Subscribe <span class="fw-normal">Newsletters</span></h2>
                 <h5>Enter your email address to register to our newsletter subscription
                     delivered on a regular basis!</h5>
