@@ -2,14 +2,14 @@
 import BestblogsCard from '../best_blogs/BestblogsCard.vue';
 
 // Import Data
-import { bestblogsData } from '../../assets/data/index';
+import { bestBlogsData } from '../../assets/data/index';
 import { bestBlogsList } from '../../assets/data/index';
 
 export default {
     components: { BestblogsCard },
 
     data() {
-        return { bestblogsData, bestBlogsList }
+        return { bestBlogsData, bestBlogsList }
     }
 }
 </script>
@@ -18,7 +18,7 @@ export default {
     <div class="bestblogs-section">
 
         <!-- Bestblogs card here -->
-        <BestblogsCard />
+        <BestblogsCard v-for="card in bestBlogsData" :bestblogsData="card" />
     </div>
 </template>
 
