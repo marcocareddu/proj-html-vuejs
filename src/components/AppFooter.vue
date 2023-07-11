@@ -44,7 +44,7 @@ export default {
                     </div>
                 </div>
             </div>
-            <p class="text-center">© 2020 Maxcoach. All Rights Reserved</p>
+            <p class="text-center credits">© 2020 Maxcoach. All Rights Reserved</p>
         </div>
     </footer>
 </template>
@@ -62,5 +62,14 @@ a {
     &:hover {
         color: $secondaryColor;
     }
+}
+
+.credits {
+    color: $customDarkGrey;
+}
+
+ul li {
+    font-size: 0.9rem;
+    font-weight: 600;
 }
 </style>
