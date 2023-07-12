@@ -64,10 +64,11 @@ export default {
         </div>
 
         <!-- Online Certification -->
-        <div class="text-center py-5">
+        <div class="text-center py-5 certification">
             <h4 class="fw-bolder">Start today for getting <span>Online Certification</span></h4>
             <h2 class="fw-bolder">You can be your own guiding star with our help!</h2>
-
+            <img src="../../assets/img/maxcoach-shape-02.png" alt="" class="bg-1">
+            <img src="../../assets/img/maxcoach-shape-01.png" alt="" class="bg-2">
             <!-- Base Button -->
             <BaseButton :buttonText="'Get started now'" />
         </div>
@@ -120,5 +121,21 @@ h2 {
 
 .ready {
     opacity: 0.5;
+}
+
+.certification {
+    position: relative;
+}
+
+.bg-1 {
+    position: absolute;
+    top: 60px;
+    right: 200px;
+}
+
+.bg-2 {
+    position: absolute;
+    top: 100px;
+    left: 200px;
 }
 </style>
