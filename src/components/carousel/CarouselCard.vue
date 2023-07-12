@@ -27,6 +27,7 @@ export default {
 
 .customCol {
     flex-basis: 30%;
+    cursor: pointer;
 }
 
 h4 {
