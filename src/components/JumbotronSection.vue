@@ -108,6 +108,10 @@ h1 {
     font-size: 50px;
 }
 
+p {
+    color: $customDarkGrey;
+}
+
 .main-photo {
     object-fit: contain;
     border-radius: 100%;
