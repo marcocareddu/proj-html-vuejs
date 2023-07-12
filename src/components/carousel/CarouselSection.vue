@@ -13,15 +13,30 @@ export default {
     data() {
         return {
             carouselData,
-            activeIndex: 0,
+            activeIndex: 1,
+            inactiveIndex: 2,
+        }
+    },
+    computed: {
+        indexTest() {
+            if (this.activeIndex === 0) {
+                this.inactiveIndex = this.carouselData.length - 1
+            } else if (this.activeIndex === this.carouselData.length - 1) {
+                this.inactiveIndex = 0
+            } else {
+                this.inactiveIndex = this.activeIndex + 1
+            }
         }
     },
     methods: {
         iconType(index) {
             const isActive = this.activeIndex === index;
-            return isActive ? 'active' : 'ready';
+            if (index === this.inactiveIndex) {
+                return 'inactive'
+            } else {
+                return isActive ? 'active' : 'ready';
+            }
         },
-
     },
 }
 
@@ -39,8 +54,8 @@ export default {
             <div class="row">
 
                 <!-- Carousel Card Inject -->
-                <CarouselCard v-for="(card, i) in carouselData" :key="card.name" :carouselData="card"
-                    :class="iconType(i)" />
+                <CarouselCard v-for="(card, i) in carouselData" :key="card.name" @click="activeIndex = i"
+                    :carouselData="card" :class="iconType(i)" />
             </div>
             <div class="dots text-center pt-3">
                 <font-awesome-icon v-for="(item, i) in carouselData" :icon="['fas', 'circle']" class="dot px-1"
