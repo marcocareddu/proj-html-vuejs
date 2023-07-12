@@ -18,16 +18,26 @@ export default {}
                 hints of early-bird rewards as well.</p>
             <a href="#" class="fw-bolder">Download free guidebook <font-awesome-icon :icon="['fas', 'arrow-right']" /></a>
         </div>
+
+        <img src="../../assets/img/maxcoach-shape-05-150x150.png" alt="" class="bg-1">
+        <img src="../../assets/img/maxcoach-shape-02.png" alt="" class="bg-3">
+        <img src="../../assets/img/maxcoach-shape-07.png" alt="" class="bg-4">
+        <img src="../../assets/img/maxcoach-shape-01.png" alt="" class="bg-5">
     </div>
 </template>
 
 <style lang="scss" scoped>
 @use '../../assets/scss/partials/_vars.scss' as *;
 
+.container {
+    position: relative;
+}
+
 .picture {
     position: relative;
     cursor: pointer;
     overflow: hidden;
+    z-index: 1;
 }
 
 .main-pic {
@@ -38,6 +48,30 @@ export default {}
     &:hover {
         transform: scale(1.4);
     }
+}
+
+.bg-1 {
+    position: absolute;
+    top: 10px;
+    left: 0px;
+}
+
+.bg-3 {
+    position: absolute;
+    top: -10px;
+    right: 300px;
+}
+
+.bg-4 {
+    position: absolute;
+    bottom: 0px;
+    right: 420px;
+}
+
+.bg-5 {
+    position: absolute;
+    bottom: 20px;
+    left: -60px;
 }
 
 .youtube {
