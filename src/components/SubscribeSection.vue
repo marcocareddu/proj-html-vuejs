@@ -20,6 +20,9 @@ export default {
                 </form>
             </div>
         </div>
+        <img src="../assets/img/maxcoach-shape-02.png" alt="" class="bg-1">
+        <img src="../assets/img/maxcoach-shape-01.png" alt="" class="bg-2">
+        <img src="../assets/img/maxcoach-shape-09.png" alt="" class="bg-3">
     </div>
 </template>
 
@@ -51,5 +54,28 @@ input {
 .mini-container {
     margin: 0 auto;
     width: 60%;
+}
+
+.subscribe-section {
+    position: relative;
+}
+
+.bg-1 {
+    position: absolute;
+    top: 150px;
+    right: 200px;
+}
+
+.bg-2 {
+    position: absolute;
+    bottom: 90px;
+    left: 200px;
+}
+
+.bg-3 {
+    position: absolute;
+    top: 80px;
+    right: 220px;
+    z-index: 1;
 }
 </style>
