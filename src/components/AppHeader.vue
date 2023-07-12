@@ -31,9 +31,10 @@ export default {
                             </a>
 
                             <!-- Dropdown -->
-                            <div class="d-down">
+                            <div class="d-down pt-3">
                                 <ul>
-                                    <li v-for="link in voice.link"><a :href="link.url">{{ link.name }}</a></li>
+                                    <li v-for="link in voice.link" :key="link.name" class="p-2 px-4"><a :href="link.url">{{
+                                        link.name }}</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -106,7 +107,19 @@ a {
 
 .d-down {
     position: absolute;
-    top: 80px;
+    top: 25px;
+    width: 250px;
     display: none;
+    background-color: white;
+    z-index: 1;
+    border-bottom: 5px solid $secondaryColor;
+
+    ul li a {
+        color: $customLilla;
+
+        &:hover {
+            color: black;
+        }
+    }
 }
 </style>
