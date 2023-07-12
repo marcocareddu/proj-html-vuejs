@@ -5,7 +5,10 @@ export default {
 </script>
 
 <template>
-    <button class='my-3 px-5 py-3 rounded border-0'>{{ buttonText }}</button>
+    <button class='my-3 px-5 py-3 rounded border-0'>
+        <slot></slot>
+        {{ buttonText }}
+    </button>
 </template>
 
 <style lang="scss" scoped>
