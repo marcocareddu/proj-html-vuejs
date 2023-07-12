@@ -35,7 +35,9 @@ export default {
 
             <!-- Button -->
             <div class="text-center">
-                <BaseButton :buttonText="'View all courses'" />
+                <BaseButton>
+                    <span> View all courses <font-awesome-icon :icon="['fas', 'arrow-right']" class="ps-2" /></span>
+                </BaseButton>
             </div>
         </div>
     </div>
