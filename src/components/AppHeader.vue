@@ -29,6 +29,13 @@ export default {
                             <a :href="voice.title" class="d-flex align-items-center">{{ voice.title }}
                                 <FontAwesomeIcon icon="fa-solid fa-chevron-down" />
                             </a>
+
+                            <!-- Dropdown -->
+                            <div class="d-down">
+                                <ul>
+                                    <li v-for="link in voice.link"><a :href="link.url">{{ link.name }}</a></li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -75,6 +82,12 @@ img {
 
 ul li {
     list-style-type: none;
+
+    &:hover {
+        .d-down {
+            display: block;
+        }
+    }
 }
 
 a {
@@ -85,5 +98,15 @@ a {
     &:hover {
         color: $secondaryColor;
     }
+}
+
+.menu {
+    position: relative;
+}
+
+.d-down {
+    position: absolute;
+    top: 80px;
+    display: none;
 }
 </style>
