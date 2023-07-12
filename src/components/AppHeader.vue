@@ -16,7 +16,7 @@ export default {
 
             <!-- Logo -->
             <div class="logo">
-                <img src="../assets/img/dark-logo.png" alt="MaxCoach Logo">
+                <a href="#"><img src="../assets/img/dark-logo.png" alt="MaxCoach Logo"></a>
             </div>
 
             <!-- Navbar -->
