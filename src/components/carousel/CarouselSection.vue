@@ -1,4 +1,6 @@
 <script>
+import { faFontAwesome } from '@fortawesome/free-solid-svg-icons';
+
 import CarouselCard from './CarouselCard.vue';
 import BaseButton from '../BaseButton.vue';
 
@@ -11,6 +13,7 @@ export default {
     data() {
         return {
             carouselData,
+            activeIndex: 0,
         }
     }
 }
@@ -30,6 +33,10 @@ export default {
 
                 <!-- Carousel Card Inject -->
                 <CarouselCard v-for="card in carouselData" :key="card.name" :carouselData="card" />
+            </div>
+            <div class="dots text-center pt-3">
+                <font-awesome-icon v-for="(item, i) in carouselData" :icon="['fas', 'circle']" class="dot px-1"
+                    @click="activeIndex = i" />
             </div>
         </div>
 
@@ -66,5 +73,29 @@ span {
 h4,
 h2 {
     color: $tertiaryColor;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.dot:hover {
+    font-size: 1.3rem;
+}
+
+.active {
+    display: block;
+    opacity: 1;
+}
+
+.inactive {
+    display: none;
+}
+
+.ready {
+    opacity: 0.5;
 }
 </style>

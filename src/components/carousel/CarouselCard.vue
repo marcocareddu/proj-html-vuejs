@@ -26,7 +26,7 @@ export default {
 @use '../../assets/scss/partials/_vars.scss' as *;
 
 .customCol {
-    flex-basis: 22%;
+    flex-basis: 30%;
 }
 
 h4 {
