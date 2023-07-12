@@ -113,6 +113,7 @@ a {
     background-color: white;
     z-index: 1;
     border-bottom: 5px solid $secondaryColor;
+    box-shadow: 0px 20px 20px 0px $customLilla;
 
     ul li a {
         color: $customLilla;
