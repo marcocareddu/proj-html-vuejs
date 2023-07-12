@@ -23,7 +23,10 @@ export default {
 
                 <!-- Base Button -->
                 <div>
-                    <BaseButton buttonText="Download Free Guide" />
+                    <BaseButton buttonText="Download Free Guide">
+                        <!-- Slot Icon -->
+                        <font-awesome-icon :icon="['fas', 'download']" class="pe-3" />
+                    </BaseButton>
                 </div>
 
                 <p class="py-2">Have questions? <a href="#" class="fw-bolder">Get Free Samples</a></p>
