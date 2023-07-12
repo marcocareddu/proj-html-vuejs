@@ -17,6 +17,7 @@ export default {
     <footer>
         <div class="container">
             <div class="d-flex justify-content-between py-5">
+
                 <!-- Address Section -->
                 <div class="address">
                     <h5 class="fw-bolder">Address</h5>
@@ -44,6 +45,7 @@ export default {
                         </ul>
                     </div>
                 </div>
+
             </div>
             <p class="text-center credits">© 2020 Maxcoach. All Rights Reserved</p>
         </div>
